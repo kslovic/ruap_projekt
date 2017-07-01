@@ -1,6 +1,5 @@
 import sys
 sys.path.insert(0,'D:\\\home\\Python27\\Lib\\site-packages')
-print(sys.path)
 import cv2                 # working with, mainly resizing, images
 import os                  # dealing with directories
 import sys
