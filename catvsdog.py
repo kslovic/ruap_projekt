@@ -5,7 +5,7 @@ import numpy
 import urllib2
 import json 
 from skimage import feature
-TEST_DIR = 'C:/xampp/htdocs/catvsdog/uploads'
+TEST_DIR = 'uploads'
 IMG_SIZE = 200
 
 def process_pic():

@@ -137,12 +137,23 @@
   }
   #inputPhoto {
 	font-style: normal;
-	cursor: pointer;
+	font-size: 25px !important;
+    font-weight: bold;
 	font-size: 16px;
   }
-  #inputPhoto:hover {
-	color: #000;
+  #inputPhoto:hover, #btnTest:hover {
+	color: #f5c22a;
   }
   #result{
   	margin-top: 50%;
+  }
+  #btnTest{
+	border: none;
+    background-color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+	cursor: pointer;
+  }
+  #upload_and_test{
+	  text-align:center;
   }
