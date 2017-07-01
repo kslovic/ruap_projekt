@@ -40,7 +40,7 @@ if ($uploadOk == 0) {
         //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
         $arg=basename($_FILES["fileToUpload"]["name"]);
         echo $arg;
-        $results = shell_exec('py catvsdog.py ' . $arg);
+        $results = shell_exec('python catvsdog.py ' . $arg);
 		var_dump($results);
         $results= substr($results, 1, -2);
         if($results=="0"){
