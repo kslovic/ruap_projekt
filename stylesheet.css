@@ -155,5 +155,18 @@
 	cursor: pointer;
   }
   #upload_and_test{
-	  text-align:center;
+	text-align:center;
+  }
+  #description{
+	background-color: #2d2d30;
+    width: 100%;
+    color: #eee;
+    font-size: 20px;
+  }
+  #description h3 {
+	  color:#fff;
+	  font-size: 22px;
+  }
+  #test{
+	  font-size: 22px;
   }

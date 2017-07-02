@@ -44,10 +44,10 @@ if ($uploadOk == 0) {
 		//var_dump($results);
         $results= substr($results, 1, -2);
         if($results=="0"){
-            echo "Pas";
+            echo "DOG";
         }
         else{
-            echo "Mačka";
+            echo "CAT";
         }
     } else {
         echo "Sorry, there was an error uploading your file.";

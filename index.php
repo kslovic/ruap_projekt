@@ -15,20 +15,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
       <a class="navbar-brand" href="#myPage">Cat or Dog</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="#myPage">HOME</a></li>
-		<li><a href="#description">DESCRIPTION</a></li>
-		<li><a href="#model">MODEL</a></li>
-        <li><a href="#test">TEST</a></li>
-      </ul>
     </div>
   </div>
 </nav>
@@ -43,18 +30,13 @@
 <!-- Container Description-->
 <div id="description" class="container text-center">
   <h3>CAT VS. DOG</h3>
-  <p>It is easy for humans to determine whether images contain either a cat or a dog while computer find it a bit more difficult.</p>
+  <p>
+  It is easy for humans to determine whether images contain either a cat or a dog while computer find it a bit more difficult.<br>
+  Many people tried or are still trying to develop an algorithm which can classify images of cats and dogs. 
+  </p>
   <br>
 </div>
 
-<!-- Container Model -->
-<div id="model" class="bg-1">
-<div class="container">
-  <h3 class="text-center">Machine Learning Model</h3>
-  <p class="text-center"><em>Microsoft Azure</em></p>
-  <br>
-  </div>
-</div>
 <!-- Container Test -->
 <div id="test" class="container">
     <h3 class="text-center">TEST MODEL</h3>
@@ -101,13 +83,12 @@ $(document).ready(function(e){
 			processData:false,        
 			success: function(response)   
 			{
+			if((response + '').length < 4)
+				$("#result").html("There is a <b style='color:#000'>  "+ response +"  </b> on the picture.");
+			else {
+				$("#result").html("");
 				alert(response);
-				if((response + '').length < 4)
-					$("#result").html("There is a <b style='color:#000'>  "+ response +"  </b> on the picture.");
-				else {
-					$("#result").html("");
-					alert(response);
-				}
+			}
 			}
 		});
 })});
